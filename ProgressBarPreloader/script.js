@@ -24,6 +24,7 @@ till.from("body", {
 
 let width = 1;
 let id;
+
 function move(){
     id = setInterval(frame, 10);
 }
