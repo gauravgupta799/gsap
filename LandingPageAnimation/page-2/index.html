@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <span>New York</span>
+            </div>
+            <div class="search">
+                <ion-icon name="search"></ion-icon>
+                <ion-icon name="menu"></ion-icon>
+            </div>
+        </div>
+        <div class="images">
+            <div class="img img-1"></div>
+            <div class="img img-2"></div>
+            <div class="img img-3"></div>
+            <div class="img img-4"></div>
+            <div class="img img-5"></div>
+        </div>
+        <div class="title">
+            <span>Newyork</span>
+        </div>
+
+        <!-- side icons -->
+        <div class="side-icon">
+            <ion-icon name="arrow-dropleft-circle" class="icn"></ion-icon>
+            <ion-icon name="arrow-dropright-circle" class="icn"></ion-icon>
+        </div>
+        <div class="bottom-bar">
+            <div>Vogue fahion</div>
+            <div>2023</div>
+            <div>Desgin Brand</div>
+        </div>
+
+        <div class="media">
+            <ul>
+                <li><ion-icon name="logo-facebook"</li>
+                <li><ion-icon name="logo-twitter"</li>
+                <li><ion-icon name="logo-instagram"</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- <script href="script.js"></script> -->
+    <script>
+        TweenMax.staggerFrom(".logo", 1.6, {
+            delay:0.2,
+            opacity:0,
+            y:20,
+            ease:Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".search", 1.6, {
+            delay:0.2,
+            opacity:0,
+            y:20,
+            ease:Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".img", 3, {
+            delay:0.7,
+            opacity:0,
+            y:70,
+            ease:Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".bottom-bar", 2, {
+            delay:2,
+            opacity:0,
+            y:-40,
+            ease:Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".icn", 2, {
+            delay:2.5,
+            opacity:0,
+            y:40,
+            ease:Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".title span", 3, {
+            delay:3,
+            opacity:0,
+            x:-100,
+            ease:Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".media ul li", 3, {
+            delay:4.5,
+            opacity:0,
+            y:50,
+            ease:Expo.easeInOut
+        });
+    </script>
+</body>
+</html>
