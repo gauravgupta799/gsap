@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Animation Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Portfolio</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Client Login</li>
+    </ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script>
+    const tween = gsap.to("li",{
+        backgroundImage:"linear-gradient(90deg, var(--left) 0%, var(--left) 100%, var(--right)100%)",
+        stagger:{
+            each:0.1,
+            ease:"power2.out"
+        }
+    })
+</script>
+</body>
+</html>
