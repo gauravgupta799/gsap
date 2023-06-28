@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800display=swap");
+
+@font-face {
+    font-family:"Raiderfont";
+    src:local('Raiderfont'), url('Raiderfont.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body {
+    background-color: #161616;
+    font-family:'Montserrat';
+}
+
+.title{
+    margin-top: 5rem;
+    font-size: 18rem;
+    color: #fff000;
+    overflow: hidden;
+    margin-left: 115px;
+    font-family: 'Raiderfont';
+}
+
+.title .letter{
+    display: inline-block;
+    line-height: 2rem;
+}
+
+.menu{
+    position: absolute;
+    bottom: 40%;
+    padding: 0 10px;
+    right: -160px;
+    transform: rotate(-90deg);
+}
+
+.menu ul li{
+   display: inline-block;
+   padding: 10px 25px;
+   color:#fff;
+   font-size: 12px;
+   font-weight: 300;
+   text-transform: uppercase;
+   transition:all 0.5s ease-in-out;
+}
+.scrolldown{
+    font-size: 12px;
+    letter-spacing: 3px;
+    position: absolute;
+    color:#fff;
+    bottom: 90px;
+    left: 50px;
+    transform: rotate(-90deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.scrolldown::before{
+    content: "";
+    border:2px solid #fff;
+    width: 50px;
+    margin: 0px 20px 0px 0px;
+    transform: translateY(-2px);
+    opacity: 0.5;
+    display: inline-block;
+}
+
+.menu ul li:hover, .scrolldown:hover{
+    cursor: pointer;
+    color: #fff000;
+}
