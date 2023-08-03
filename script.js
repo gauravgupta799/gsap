@@ -8,7 +8,7 @@ timeline.to(".animate",{
 timeline.to(".animation",{
     delay:1,
     duration:1,
-    y:"100%",
+    x:"100%",
     ease:"power4.out"
 });
 
