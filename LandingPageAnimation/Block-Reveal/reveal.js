@@ -49,15 +49,20 @@ window.addEventListener("load", ()=>{
         y:-100,
         ease:Power4.easeInOut
     })
-    tl.from(".button , .number", {
+    tl.from(".number", {
         opacity:0,
         delay:0,
         y:10,
         duaration:1,
-        stagger:0.5,
         ease:Expo.easeInOut
     })
-
+    tl.from(".button", {
+        opacity:0,
+        delay:0,
+        y:10,
+        duaration:1,
+        ease:Expo.easeInOut
+    })
     tl.from(".media ul li, .scroll-down", {
         opacity:0,
         delay:0,

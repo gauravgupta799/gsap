@@ -14,7 +14,9 @@ till.to("#percent, #bar",{
 
 till.to("#preloader", {
     duration:0.8,
-    width:"0%",
+    // width:"0%",\
+    // opacity:0,
+    yPercent:-100
 });
 
 till.from("body", {
@@ -22,20 +24,22 @@ till.from("body", {
     y:"-150%",
 } , "-=.2");
 
-let width = 1;
-let id;
 
-function move(){
+
+window.onload = () => {
+    let width = 0;
+    let id;
+    function frame(){
+        if(width>= 100){
+            clearInterval(id);
+            till.play();
+        }else{
+            width++;
+            bar.style.width = width + "%";
+            percent.innerHTML = width + "%";
+        }
+    }
+
     id = setInterval(frame, 10);
 }
 
-function frame(){
-    if(width>= 100){
-        clearInterval(id);
-        till.play();
-    }else{
-        width++;
-        bar.style.width = width + "%";
-        percent.innerHTML = width + "%";
-    }
-}
