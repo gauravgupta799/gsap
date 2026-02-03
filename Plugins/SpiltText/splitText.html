@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Text</title>
+    <style>
+        body{
+            background-color: #121212;
+            color:#fff;
+            box-sizing: border-box;
+            
+        }
+        h1{
+            color: #dfdcff;
+            font-size: clamp(2rem, 12rem, 4vw);
+            line-height: 1;
+            text-align: center;
+        }
+        p{
+            font-size: 24px;
+            line-height: 1.5;
+            color:rgb(229, 236, 214);
+            max-width: 90%;
+            margin-inline:auto;
+            text-transform: capitalize;
+        }
+        a{
+            color:coral;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <h1 class="text clr-white">This is Split Text Plugin Animation</h1>
+        <h1 class="text clr-white">This is Split Text Plugin Animation</h1>
+        <h1 class="text clr-white">This is Split Text Plugin Animation</h1>
+
+        <p class="text">
+            Lorem ipsum dolor <sup>1</sup> sit amet consectetur adipisicing elit. Accusamus <a href="#" class="link">nested link</a> corporis obcaecati eligendi dicta ab ea in voluptatibus sed, neque adipisci? 
+        </p>
+    </main>
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <script src="./splitText.js"></script>
+</body>
+</html>
